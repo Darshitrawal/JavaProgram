@@ -1,0 +1,14 @@
+package com.darshit.lib.model;
+
+import java.util.*;
+
+public class Student extends User{
+  public int sem, bookLimit = 4;
+  public int enroll;
+
+  public Student(int id, int enroll, String name, String branch, int sem){
+    super(name, branch, id);
+    this.sem = sem;
+    this.enroll = enroll;
+  }
+}
